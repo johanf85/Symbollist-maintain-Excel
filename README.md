@@ -1,7 +1,7 @@
 # Symbollist-maintain-Excel
 An Excel based solution for maintaining units, symbols and equations for a LaTeX document.
 
-Download .zip file containing all files:
+Download .zip file containing all files: http://bit.ly/Excel-MaintainSymbollist-LaTeX
 
 Working example on OverLeaf.com: https://www.overleaf.com/read/svtcgxdkqsxr
 
