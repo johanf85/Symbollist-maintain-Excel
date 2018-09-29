@@ -27,7 +27,7 @@ Make sure you wrap every symbol code in extra parenthesis, eg eg {\rho_\ell}. Th
 Add the number for the desired code in the box 'Enter equation number
 for code'. The code will be shown.\
 \
-**Note**: Currently parameter definitions are shown based on the order on the Symbols list, you can order this symbols within excel with the sort function to alphabetical (latin name)
+**Note**: Currently parameter definitions are shown based on the order on the 'Symbols' tab in Excel. You can order the symbols within Excel with the sort function to alphabetical (based on the latin name, the B column).
 \
 \
 The Excel tabs are secured, so no unwanted changes are done per accident. To make changes to the excel, first unsecure the tabs. 
