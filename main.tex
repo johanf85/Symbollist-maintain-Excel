@@ -1,12 +1,11 @@
 \documentclass{article}
 \usepackage{amsmath}
-\usepackage[toc,nopostdot,nonumberlist,acronym,automake=true,nomain]{glossaries-extra}
+\usepackage[toc,nopostdot,nonumberlist,acronym,automake,nomain]{glossaries-extra}
 \usepackage{array}
 \usepackage{textgreek} %for greek alphabet symbols
 \usepackage{siunitx}
 \usepackage{tabularx}
 \usepackage{longtable}
-
 \usepackage{xcolor}
 
 \glssetnoexpandfield{unit} %necessary for using siunitx macros in the glossary
@@ -24,7 +23,7 @@
 \newcommand{\widtheqparameter}{6cm}
 \newcommand{\widtheqwhitespace}{2cm}
 
-\makenoidxglossaries                      
+\makeglossaries                      
 
 % Load external file named glsSymbolListDefinitions.tex with symbol list definitions
 \loadglsentries{glsSymbolListDefinitions}
@@ -49,6 +48,7 @@
 
 \makeatletter
 
+%adding a dot between the units that's lifted 
 \sisetup{inter-unit-product=\ensuremath{{}\cdot{}}} 
 
 %declaring shorthand unit macros, for use in Symbol list, equations parameters and everywhere else.
@@ -76,12 +76,14 @@
 %macros for parameter descriptions under equation
 \input{parameterdefinitions.tex}
   
+\input{acronymdefinitions.tex}
+\input{glossarydefinitions.tex}
 
 \begin{document} 
 
 \glsaddall  
 
-\printnoidxglossary[type=symbolslist,style=symbunitlong,title=List of symbols,sort=standard]    % list of symbols
+\printglossary[type=symbolslist,style=symbunitlong,title=List of symbols]    % list of symbols
  
 \section{Examples for equations}
 Reynolds number (Re) is defined as follows:
@@ -102,9 +104,6 @@ Archimedes number (Ar) is defined as follows:
 \text{Ar} = \frac {gL^{3}\rho_{\ell}\left(\rho-\rho_{\ell}\right)}{\mu^{2}}
 \equationunit{[\si{\nodimension}]}
 \end{equation}
-\medskip{}
-
-
 \begin{definitions}
 g & \Eg \\
 L & \EL \\
