@@ -11,6 +11,9 @@ This projects contains a LaTeX solution for creating a symbol list using the `gl
 
 The goal of this project is defining symbol definitions and units only once and create symbol list and parameter definitions automatically based on this. To help with this, an Excel file (SymbolSheetSecure.xlsx) is created. 
 
+**Bugs or suggestions?**
+Please reach out to me at johanf85git[at]outlook.com
+
 # Instructions:
 - Download the project and take notice on how the .tex files are built up
 - Open the SymbolSheetSecure.xlsx file\
@@ -28,14 +31,16 @@ Make sure you wrap every symbol code in extra parenthesis, eg eg {\rho_\ell}. Th
 Add the number for the desired code in the box 'Enter equation number
 for code'. The code for the eqaution and parameter definitions will be shown.\
 - Double check the the output
-\
+
 **Choose order**: Currently parameter definitions are shown based on the order on the 'Symbols' tab in Excel. You can order the symbols within Excel with the sort function to alphabetical (based on the latin name, the B column).
 \
 \
 **Compile the glossaries:**
-There are several ways to compile the glossaries. Using perl is one of them. 
-Run the following command (perl has to be installed).
-`perl /usr/local/texlive/2017/texmf-dist/scripts/glossaries/makeglossaries main`
+There are several ways to compile the glossaries. Using perl is one of them. (perl has to be installed)
+\
+On my mac, running texlive, I run the following command.\
+`perl /usr/local/texlive/2017/texmf-dist/scripts/glossaries/makeglossaries main` \
+run this in the directory were your main.tex file is saved
 \
 \
 **Changing the Excel file**
@@ -46,5 +51,3 @@ The Excel tabs are secured, so no unwanted changes can be done by accident. The 
 - Excel copies content of code with too many spaces and with quotesigns, try to find a solution
 - Change tex code to put the Symbols list in alphabetical order in Latin/Greek combined
 
-**Bugs or suggestions?**
-Please reach out to me at johanf85git[at]outlook.com
