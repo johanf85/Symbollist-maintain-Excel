@@ -12,21 +12,22 @@ This projects contains a LaTeX solution for creating a symbol list using the `gl
 The goal of this project is defining symbol definitions and units only once and create symbol list and parameter definitions automatically based on this. To help with this, an Excel file (SymbolSheetSecure.xlsx) is created. 
 
 # Instructions:
-- Download the project and take notice on how the .tex are build up
+- Download the project and take notice on how the .tex files are built up
 - Open the SymbolSheetSecure.xlsx file\
-Example data is added
-- Define units on the Units tab, see the `siunitx` package manual for syntax\
+Example data is included
+- Define units that are used on the Units tab, see the `siunitx` package manual for syntax\
 under \DeclareSIUnit add your unitname including '\\'\
 under definition add the content of your unit\
 - Add the symbols to the 'Symbols' tab\
-Under Symbol: add the symbol (this for own reference)\
+Under Symbol: add the symbol (this for your own reference)\
 fill the other yellow cells in the row. I started the definition commandname with a D, this is not mandatory. Same for the E of Equation parameter. Do make sure to add a '\\'
-- Copy the macros to your LaTeX document preamble. So from the 'Units' tab, column D. And from the 'Symbols' tab' JKL
+- Copy the macros to your LaTeX document preamble. So from the 'Units' tab, column D. And from the 'Symbols' tab', columns J,K and L.
 - Add your equations under the 'Equations' tab\
 Make sure you wrap every symbol code in extra parenthesis, eg eg {\rho_\ell}. This is necessary, otherwise Excel can't recognize the symbols properly.
 - Generate LaTeX code for each equation\
 Add the number for the desired code in the box 'Enter equation number
 for code'. The code for the eqaution and parameter definitions will be shown.\
+- Double check the the output
 \
 **Choose order**: Currently parameter definitions are shown based on the order on the 'Symbols' tab in Excel. You can order the symbols within Excel with the sort function to alphabetical (based on the latin name, the B column).
 \
@@ -44,3 +45,6 @@ The Excel tabs are secured, so no unwanted changes can be done by accident. The 
 **To do list for git project:**
 - Excel copies content of code with too many spaces and with quotesigns, try to find a solution
 - Change tex code to put the Symbols list in alphabetical order in Latin/Greek combined
+
+**Bugs or suggestions?**
+Please reach out to me at johanf85git[at]outlook.com
