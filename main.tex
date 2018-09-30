@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage{amsmath}
-\usepackage[toc,nopostdot,nonumberlist,acronym,automake,nomain]{glossaries-extra}
+\usepackage[toc,nopostdot,nonumberlist,acronym,automake]{glossaries-extra}
 \usepackage{array}
 \usepackage{textgreek} %for greek alphabet symbols
 \usepackage{siunitx}
@@ -20,8 +20,8 @@
 \glsaddkey{unit}{\glsentrytext{\glslabel}}{\glsentryunit}{\GLsentryunit}{\glsunit}{\Glsunit}{\GLSunit}
 
 % widths used in the parameter definitions
-\newcommand{\widtheqparameter}{6cm}
-\newcommand{\widtheqwhitespace}{2cm}
+\newcommand{\widtheqparameter}{0.45\columnwidth}
+\newcommand{\widtheqwhitespace}{0.1\columnwidth}
 
 \makeglossaries                      
 
@@ -69,6 +69,7 @@
   #1 \begin{tabular}[t]{>{$}l<{$} @{${}={}$} l}}
   {\end{tabular}\\[\belowdisplayskip]
   \end{center}
+  \bigskip{}
   }
   
 %macros for defining symbol descriptions, used in Symbol List and in parameter description, see below
@@ -84,32 +85,34 @@
 \glsaddall  
 
 \printglossary[type=symbolslist,style=symbunitlong,title=List of symbols]    % list of symbols
- 
+ \clearpage{}
 \section{Examples for equations}
+
 Reynolds number (Re) is defined as follows:
 
-\begin{equation}
-\text{Re}=\frac{\rho_{\ell} uL}{\mu}\equationunit{[\si{\nodimension}]}
+\begin{equation} 
+\text{Re}=\frac{{\rho_\ell} {u}{L}}{\mu}\equationunit{[\si{\nodimension}]} 
 \end{equation}
-
 \begin{definitions}
-\rho_{\ell} & \Erholiquid \\
-u & \Eu \\ 
+\rho_\ell & \Erholiquid \\
+u & \Eu \\
 L & \EL \\
-\mu & \Emu
+\mu & \Emu \\
 \end{definitions}
-\bigskip{}
+
+\noindent
 Archimedes number (Ar) is defined as follows:
+
 \begin{equation}
-\text{Ar} = \frac {gL^{3}\rho_{\ell}\left(\rho-\rho_{\ell}\right)}{\mu^{2}}
+\text{Ar} = \frac {{g}{L}^{3}{\rho_\ell}\left({\rho_b}-{\rho_\ell}\right)}{{\mu}^{2}}
 \equationunit{[\si{\nodimension}]}
 \end{equation}
 \begin{definitions}
-g & \Eg \\
+\rho_\ell & \Erholiquid \\
 L & \EL \\
-\rho_{b} & \Erhobody \\
-\rho_{\ell} & \Erholiquid \\
 \mu & \Emu \\
+\rho_b & \Erhobody \\
+g & \Eg \\
 \end{definitions}
 
 
