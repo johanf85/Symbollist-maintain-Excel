@@ -19,8 +19,8 @@ Please reach out to me at johanf85git[at]outlook.com
 - Open the SymbolSheetSecure.xlsx file\
 Example data is included
 - Define units that are used on the Units tab, see the `siunitx` package manual for syntax\
-under \DeclareSIUnit add your unitname including '\\'\
-under definition add the content of your unit\
+under '\DeclareSIUnit' add your unitname including '\\'\
+under 'definition' add the content of your unit
 - Add the symbols to the 'Symbols' tab\
 Under Symbol: add the symbol (this for your own reference)\
 fill the other yellow cells in the row. I started the definition commandname with a D, this is not mandatory. Same for the E of Equation parameter. Do make sure to add a '\\'
