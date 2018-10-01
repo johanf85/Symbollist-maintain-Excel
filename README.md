@@ -36,9 +36,12 @@ for code'. The code for the eqaution and parameter definitions will be shown.\
 \
 \
 **Compile the glossaries:**
-There are several ways to compile the glossaries. Using perl is one of them. (perl has to be installed)
+There are several ways to compile the glossaries. Execute a perl script is one of them. (perl has to be installed)
 \
-On my mac, running texlive, I run the following command.\
+Run the following command in the folder where your tex file with glossaries is saved:\
+`perl /usr/local/texlive/2017/texmf-dist/scripts/glossaries/makeglossaries main`\
+
+Eg, on a mac, running texlive 2017, the command is:\
 `perl /usr/local/texlive/2017/texmf-dist/scripts/glossaries/makeglossaries main` \
 run this in the directory were your main.tex file is saved
 \
