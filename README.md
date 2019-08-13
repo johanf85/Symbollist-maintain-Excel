@@ -6,7 +6,7 @@ Download .zip file containing all files: http://bit.ly/ExcelSymbolMaintain10
 Working example on OverLeaf.com: https://www.overleaf.com/read/svtcgxdkqsxr
 
 # Introduction
-Thesis documents often contain a lot of mathematical equations. Therefore, in most cases, a symbol list is added to the document and underneath equations parameter definitions are added.
+Thesis documents often contain a lot of mathematical equations. Therefore, in most cases, a symbol list is added to the document and underneath equations, parameter definitions are added.
 This projects contains a LaTeX solution for creating a symbol list using the `glossaries` package, together with the `glossaries-extra` package. Next to this, code is provided for showing parameter definitions under a first declaration of the equation in the document.
 
 The goal of this project is defining symbol definitions and units only once and create symbol list and parameter definitions automatically based on this. To help with this, an Excel file (SymbolSheetSecure.xlsx) is created. 
@@ -36,9 +36,12 @@ for code'. The code for the eqaution and parameter definitions will be shown.\
 \
 \
 **Compile the glossaries:**
-There are several ways to compile the glossaries. Using perl is one of them. (perl has to be installed)
+There are several ways to compile the glossaries. Execute a perl script is one of them. (perl has to be installed)
 \
-On my mac, running texlive, I run the following command.\
+Run the following command in the folder where your tex file with glossaries is saved:\
+`perl <path to makeglossaries> <main file>`
+
+Eg, on a mac, running texlive 2017, the command is:\
 `perl /usr/local/texlive/2017/texmf-dist/scripts/glossaries/makeglossaries main` \
 run this in the directory were your main.tex file is saved
 \
