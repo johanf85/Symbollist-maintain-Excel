@@ -7,7 +7,9 @@ Working example on OverLeaf.com: https://www.overleaf.com/read/svtcgxdkqsxr
 
 # Introduction
 Thesis documents often contain a lot of mathematical equations. Therefore, in most cases, a symbol list is added to the document and underneath equations, parameter definitions are added.
-This projects contains a LaTeX solution for creating a symbol list using the `glossaries` package, together with the `glossaries-extra` package. Next to this, code is provided for showing parameter definitions under a first declaration of the equation in the document.
+This projects contains an Excel workbook for centrally maintaining symbols, units and equations and which generates LaTeX code for a symbol list and automatically selects the right parameter descriptions to be used under a mathematical equation. 
+
+LaTeX solution for creating a symbol list using the `glossaries` package, together with the `glossaries-extra` package. Next to this, code is provided for showing parameter definitions under a first declaration of the equation in the document.
 
 The goal of this project is defining symbol definitions and units only once and create symbol list and parameter definitions automatically based on this. To help with this, an Excel file (SymbolSheetSecure.xlsx) is created. 
 
