@@ -15,7 +15,7 @@ The goal of this project is defining symbol definitions and units only once and 
 Please reach out to me at johanf85git[at]outlook.com
 
 # Instructions:
-- Download the project and take notice on how the .tex files are built up
+- Download the project and take notice on how the .tex files are built up. For a working example, you can also look at: https://www.overleaf.com/read/svtcgxdkqsxr
 - Open the SymbolSheetSecure.xlsx file\
 Example data is included
 - Define units that are used on the Units tab, see the `siunitx` package manual for syntax\
@@ -23,16 +23,13 @@ under '\DeclareSIUnit' add your unitname including '\\'\
 under 'definition' add the content of your unit
 - Add the symbols to the 'Symbols' tab\
 Under Symbol: add the symbol (this for your own reference)\
-fill the other yellow cells in the row. I started the definition commandname with a D, this is not mandatory. Same for the E of Equation parameter. Do make sure to add a '\\'
+fill the other yellow cells in the row. I started the definition commandname with a D, this is not mandatory. Same for the E of Equation parameter. Do make sure to add a '\\' before the commandname.
 - Copy the macros to your LaTeX document preamble. So from the 'Units' tab, column D. And from the 'Symbols' tab', columns J,K and L.
 - Add your equations under the 'Equations' tab\
-Make sure you wrap every symbol code in extra parenthesis, eg eg {\rho_\ell}. This is necessary, otherwise Excel can't recognize the symbols properly.
-- Generate LaTeX code for each equation\
-Add the number for the desired code in the box 'Enter equation number
-for code'. The code for the eqaution and parameter definitions will be shown.\
-- Double check the the output
+Make sure you wrap every symbol code in extra parenthesis, eg eg {\rho_\ell}. This is necessary, otherwise Excel can't recognize the symbols properly for generating the right parameter definitions.
+- Double check the the output in your LaTeX document for possible mistakes
 
-**Choose order**: Currently parameter definitions are shown based on the order on the 'Symbols' tab in Excel. You can order the symbols within Excel with the sort function to alphabetical (based on the latin name, the B column).
+**Choose order**: Currently parameter definitions are generated based on the order on the 'Symbols' tab in Excel. You can order the symbols within Excel with Excel's sort function to alphabetical (based on the latin name, the B column).
 \
 \
 **Compile the glossaries:**
