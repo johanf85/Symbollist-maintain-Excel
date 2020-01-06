@@ -3,7 +3,7 @@ An Excel based solution for maintaining units, symbols and equations for a LaTeX
 
 Download .zip file containing all files: http://bit.ly/ExcelSymbolMaintain11
 
-Working example on OverLeaf.com: https://www.overleaf.com/read/svtcgxdkqsxr
+Working example on OverLeaf.com: http://bit.ly/OverleafExampleSymbollist
 
 # Introduction
 Thesis documents often contain a lot of mathematical equations. Therefore, in most cases, a symbol list is added to the document and underneath equations, parameter definitions are added.
