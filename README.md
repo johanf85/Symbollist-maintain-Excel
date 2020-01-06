@@ -21,12 +21,12 @@ Example data is included
 - Define units that are used on the Units tab, see the `siunitx` package manual for syntax\
 under '\DeclareSIUnit' add your unitname including '\\'\
 under 'definition' add the content of your unit
-- Add the symbols to the 'Symbols' tab\
+- Add the symbols to use in your document to the 'Symbols' tab\
 Under Symbol: add the symbol (this for your own reference)\
 fill the other yellow cells in the row. I started the definition commandname with a D, this is not mandatory. Same for the E of Equation parameter. Do make sure to add a '\\' before the commandname.
-- Copy the macros to your LaTeX document preamble. So from the 'Units' tab, column D. And from the 'Symbols' tab', columns J,K and L.
+- Copy the macros to your LaTeX document preamble. See the "To copy to preamble" tab.
 - Add your equations under the 'Equations' tab\
-Make sure you wrap every symbol code in extra parenthesis, eg eg {\rho_\ell}. This is necessary, otherwise Excel can't recognize the symbols properly for generating the right parameter definitions.
+Make sure you wrap every symbol code in extra parenthesis, eg eg {\rho_\ell}. This is necessary for Excel to recognize the symbols properly for generating the right parameter definitions. This does add extra parenthisis, however there is no other option if you want to use Excel for generating the parameter definitions. 
 - Double check the the output in your LaTeX document for possible mistakes
 
 **Choose order**: Currently parameter definitions are generated based on the order on the 'Symbols' tab in Excel. You can order the symbols within Excel with Excel's sort function to alphabetical (based on the latin name, the B column).
