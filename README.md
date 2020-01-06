@@ -19,7 +19,7 @@ Please reach out to me at johanf85git[at]outlook.com
 
 # Instructions
 - Download the project and take notice on how the .tex files are built up. For a working example, you can also look at: https://www.overleaf.com/read/svtcgxdkqsxr
-- Open the SymbolSheetSecure.xlsx file\
+- Open the symboldefinitions.xlsm file\
 Example data is included
 - Define units that are used on the Units tab, see the `siunitx` package manual for syntax\
 under '\DeclareSIUnit' add your unitname including '\\'\
